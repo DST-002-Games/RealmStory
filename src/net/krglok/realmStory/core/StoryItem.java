@@ -8,13 +8,15 @@ import net.krglok.realmStory.common.Item;
 /**
  * 
  * <pre>
- * Die StoryItem werden ueder den Namen verwaltet.
+ * Die StoryItem werden ueber den Namen verwaltet.
  * Der Name ist eine unique text referenz.
  * Zusätzlich kann ein Material angegeben werden.
  * Nur wenn das Material korrekt, kann das Item im Spiel erstellt werden.
  * 
  * Die StringList lore wird auf das Item geschhrieben, wenn das Item 
  * als Itemstack erzeugt wird.
+ * 
+ * Die meisten StoryItem werden WrittenBook sein.
  *
  * @author olaf.duda
  * @create 01.04.2016

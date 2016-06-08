@@ -23,7 +23,7 @@ import java.sql.SQLException;
  * Timing Hint:
  * - insert/update need 250-450ms per record
  * - select need 3-5 ms per record
- * - uese this as relative values not a fixed value for each computer 
+ * - use this as relative values not a fixed value for each computer 
  * - measured on i7 with 16GB RAM and with SQLite 3.x
  * - you can use SQLIte Database Browser from http://sqlitebrowser.sourceforge.net
  *  

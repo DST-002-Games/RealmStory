@@ -14,7 +14,7 @@ import net.krglok.realmStory.common.MessageList;
  *
  * </pre>
  */
-public class StoryLocation extends StoryObject
+public class StoryLocation extends StoryStep
 {
 	protected LocationData position;
 	protected HashMap<Integer, Integer> aktionLinks;

@@ -1,5 +1,8 @@
 package net.krglok.realmStory.common;
 
+import net.krglok.realmStory.command.RealmsCommandType;
+import net.krglok.realmStory.command.RealmsSubCommandType;
+
 /**
  * 
  * @author Windu

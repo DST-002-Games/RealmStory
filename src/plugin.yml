@@ -1,0 +1,29 @@
+author: Krglok
+database: false
+description: Allows to create a storyline. the player can follow the story to fullfil tasks and get written books with storydetails. 
+main: net.krglok.realmStory
+name: RealmStory
+startup: postworld
+version: 0.1.0.0
+depend: [Vault]
+softdepend: []
+commands:
+   realmstory:
+      aliases: ['realmstory', 'rsh']
+      description: RealmStory commands and version
+      usage: /realmstory
+   story:
+      aliases: ['story', 'st']
+      description: story , player commands for story management
+      usage: /story
+   storyadmin:
+      aliases: ['storyadmin', 'sta']
+      description: admin and op commands for story configuration
+      usage: /story
+permissions:
+   realmstory.user:
+      description: Allows the player to manage their actual story(s)
+      default: op
+   realmstory.admin:
+      description: Lets you use admin commands to create and configure storys.
+      default: op

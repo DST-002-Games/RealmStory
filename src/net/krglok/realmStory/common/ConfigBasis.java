@@ -28,8 +28,8 @@ public class ConfigBasis
 	public static String CONFIG_VER = "1.0.0";
 	public static final String CONFIG_VER_NAME = "config_ver";
 	public static final String PLUGIN_NAME_NAME = "plugin_name";
-	public static final String PLUGIN_NAME = "RealmsBank";
-
+	public static final String PLUGIN_NAME = "RealmStory";
+	public static final String PLUGIN_VER = "0.1.0";
 	public static double GOLDNUGGET_PRICE = 45.0;
 	public static final double GOLDINGOT_PRICE = GOLDNUGGET_PRICE*9;
 	public static final double GOLDBLOCK_PRICE = GOLDINGOT_PRICE*9;

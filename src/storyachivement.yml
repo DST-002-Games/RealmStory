@@ -1,0 +1,11 @@
+ACHIVEMENT:
+  1:
+    ID: 1
+    NAME: INTRO
+    ISENABLED: TRUE
+    AchivementText:
+      '3': 'Seite 3            '
+      '2': 'Seite 2            Es enthält ein paar Tesseiten'
+      '1': 'Seite 1            Dies ist das Testbuch'
+      '5': 'Seite 5            '
+      '4': 'Seite 4            '

@@ -106,6 +106,12 @@ public class ConfigData extends ConfigBasis
 	{
 		return PLUGIN_NAME;
 	}
+	
+	public String getVersion()
+	{
+		return PLUGIN_VER;
+	}
+
 
 	public ItemList getToolItems()
 	{

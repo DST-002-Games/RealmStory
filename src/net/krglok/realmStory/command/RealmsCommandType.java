@@ -1,4 +1,4 @@
-package net.krglok.realmStory.common;
+package net.krglok.realmStory.command;
 
 /**
  * <pre>
@@ -12,10 +12,9 @@ public enum RealmsCommandType
 {
 
 	NONE ,
-	REALMSBANK,
-	BANK,
-	RB,
-	RBADMIN
+	REALMSTORY,
+	STORY,
+	STORYADMIN
 	;
 	
 //	 RealmCommandType() 

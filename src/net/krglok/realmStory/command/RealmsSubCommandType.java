@@ -1,4 +1,4 @@
-package net.krglok.realmStory.common;
+package net.krglok.realmStory.command;
 
 /**
  * <pre>

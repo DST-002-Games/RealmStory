@@ -12,8 +12,8 @@ package net.krglok.realmStory.common;
  */
 public enum RealmsPermission
 {
-	ADMIN ("realmsbank.admin"),
-	USER ("realmsbank.user")
+	ADMIN ("realmstory.admin"),
+	USER ("realmstory.user")
     ;
 	
 	private final String value;

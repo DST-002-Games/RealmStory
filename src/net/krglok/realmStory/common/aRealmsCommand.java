@@ -6,6 +6,8 @@ import java.util.List;
 import java.util.Map;
 
 import net.krglok.realmStory.RealmStory;
+import net.krglok.realmStory.command.RealmsCommandType;
+import net.krglok.realmStory.command.RealmsSubCommandType;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;

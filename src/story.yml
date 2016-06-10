@@ -1,0 +1,31 @@
+STORY:
+  1:
+    id: 1
+    storyName: 'Story Intro'
+    storyStartText:
+      '1': 'Dies ist das StoryIntro'
+      '2': 'In einer Story bekommst die Ziele genannt die du erreichen musst.'
+      '3': 'Dies ist ähnlich einer Quest aber ohne die verschiedenen besonderen Bedingungen.'
+      '4': 'Die Story besteht im wesentlichen aus Texten, die in'
+      '5': 'Büchern präsentiert werden. Man erlangt also Wissen. Zugegeben dies ist nicht nach jedermanns Geschmack.'
+      '6': 'Sehr häufig sind Quests in die Story eingebettet.'
+      '7': 'Die Story bildet dann den Rahmen der mehrere Schritte, Abschnitte oder Questen umspannt.'
+      '8': 'Die Story füllt den Raum zwischen den Questen mit Informationen und Hintergrundwissen aus.'
+      '9': 'Die Story verbindet die einzelnen Questen zu einer Handlung.'
+      '10': ' '
+      '11': ' '
+      '12': ' '
+      '13': ' '
+    requiredStep: []
+    requiredPerm:
+      1: realmstory.user
+    grantedPerm: []
+    startStep: 1
+    endStep: 1
+    storyStartText:
+      '1': 'Seite 1            Du hast die Story abgeschlossen'
+      '2': 'Seite 2            Es folgen noch einige leere Seiten'
+      '3': 'Seite 3            '
+      '4': 'Seite 4            '
+      '5': 'Seite 5            '
+    

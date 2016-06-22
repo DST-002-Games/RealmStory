@@ -1,5 +1,10 @@
 package net.krglok.realmStory.core;
 
+/**
+ * 
+ */
+
+import java.util.Collection;
 import java.util.HashMap;
 
 public class StoryStepList extends HashMap<Integer, StoryStep> 
@@ -7,13 +12,10 @@ public class StoryStepList extends HashMap<Integer, StoryStep>
 	private static final long serialVersionUID = 1L;
 	private static int ID = 0;
 	
-	protected int startStep ;
-	protected int endStep;
 
 	public StoryStepList()
 	{
-		startStep = 0;
-		endStep = 0;
+		
 	}
 	
 	public void initID(int value)
@@ -62,6 +64,7 @@ public class StoryStepList extends HashMap<Integer, StoryStep>
 		this.put(key, storyObject);
 	}
 	
+	
 	public StoryStep getStoryStep(int id)
 	{
 		if (this.containsKey(id))
@@ -70,6 +73,7 @@ public class StoryStepList extends HashMap<Integer, StoryStep>
 		}
 		return null;
 	}
+	
 	
 	public StoryStep getStoryStep(String name)
 	{
@@ -83,16 +87,75 @@ public class StoryStepList extends HashMap<Integer, StoryStep>
 		return null;
 	}
 	
+	
 	public StoryStepList findStoryObject(String name)
 	{
 		StoryStepList subList = new StoryStepList();
-		for (StoryStep sEvent : this.values())
+		for (StoryStep sStep : this.values())
 		{
-			if (sEvent.stepName.contains(name))
+			if (sStep.stepName.contains(name))
 			{
-				 subList.addStoryStep(sEvent);
+				 subList.addStoryStep(sStep);
 			}
 		}
+		return subList;
+	}
+	
+	/**
+	 * Holt eine Liste der Steps, die alle zur gleichen Story gehoeren
+	 * Die Liste ist nicht sortiert
+	 * 
+	 * @param storyId
+	 * @return
+	 */
+	public StoryStepList getStorySteps(int storyId)
+	{
+		StoryStepList subList = new StoryStepList();
+		for (StoryStep sStep : this.values())
+		{
+			if (sStep.storyId == storyId)
+			{
+			  subList.addStoryStep(sStep);
+			}
+		}
+		return subList;
+	}
+	
+	/**
+	 * Holt den naechsten Step zur stepId.
+	 * Prueft ob beide zur gleichen Story gehoeren.
+	 * 
+	 * @param stepId
+	 * @return nextStoryStep
+	 */
+	public StoryStep findNextStep(int stepId )
+	{
+		StoryStep nextStep = null;
+		StoryStep actualStep = getStoryStep(stepId);
+		if (actualStep.nextStep > 0)
+		{
+			nextStep = getStoryStep(actualStep.nextStep);
+			if (nextStep.storyId == actualStep.storyId)
+			{
+				return nextStep;
+			}
+		}
+		return null;
+	}
+	
+	public StoryStepList getRefList(Collection<Integer> refList)
+	{
+		StoryStepList subList = new StoryStepList();
+		
+		for (Integer ref : refList)
+		{
+			StoryStep item = getStoryStep(ref);
+			if (item != null)
+			{
+				subList.addStoryStep(item);
+			}
+		}
+		
 		return subList;
 	}
 	

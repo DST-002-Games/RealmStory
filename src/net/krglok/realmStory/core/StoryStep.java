@@ -3,14 +3,16 @@ package net.krglok.realmStory.core;
 
 /**
  * 
- * 
- *  * Die Texte des Achivement werden in ein Book geschrieben und an den
+ * <pre> 
+ * beinhaltet die Daten fuer einen Story Event. 
+ * Die propertys werden in der Datenbank persistent gespeichert.
+ * Die Texte des StoryStep werden in ein Book geschrieben und an den
  * player gegeben.
  * 
  * 
  * @author olaf.duda
  * @create 08.06.2016
- * 
+ * </pre>
  */
 
 import java.util.HashMap;
@@ -19,6 +21,7 @@ import net.krglok.realmStory.common.MessageList;
 
 public abstract class StoryStep
 {
+	protected int storyId;
 	protected int stepId;
 	protected int sortnr;
 	protected String stepName;
@@ -31,6 +34,7 @@ public abstract class StoryStep
 	protected String actionType;
 	protected String actionStatus;
 	protected int nextStep;
+	protected Boolean isAutoStep;
 	
 	public StoryStep()
 	{
@@ -45,6 +49,7 @@ public abstract class StoryStep
 		actionType = "";
 		actionStatus = "";
 		nextStep = 0;
+		isAutoStep = true;
 		
 	}
 

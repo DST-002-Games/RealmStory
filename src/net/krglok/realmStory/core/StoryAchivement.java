@@ -9,8 +9,6 @@ import net.krglok.realmStory.common.MessageList;
 /**
  * 
  * <pre>
- * beinhaltet die Daten fuer einen Story Event. 
- * Die propertys werden in der Datenbank persistent gespeichert.
  * 
  * Die Texte des Achivement werden in ein Book geschrieben und an den
  * player gegeben.
@@ -47,6 +45,47 @@ public class StoryAchivement
 		this.AchivementText	= new MessageList();
 		this.isEnabled	= isEnabled;
 	}
+
+	public int getAchivementId()
+	{
+		return AchivementId;
+	}
+
+	public void setAchivementId(int achivementId)
+	{
+		AchivementId = achivementId;
+	}
+
+	public String getAchivementName()
+	{
+		return AchivementName;
+	}
+
+	public void setAchivementName(String achivementName)
+	{
+		AchivementName = achivementName;
+	}
+
+	public MessageList getAchivementText()
+	{
+		return AchivementText;
+	}
+
+	public void setAchivementText(MessageList achivementText)
+	{
+		AchivementText = achivementText;
+	}
+
+	public Boolean getIsEnabled()
+	{
+		return isEnabled;
+	}
+
+	public void setIsEnabled(Boolean isEnabled)
+	{
+		this.isEnabled = isEnabled;
+	}
+	
 	
 
 }

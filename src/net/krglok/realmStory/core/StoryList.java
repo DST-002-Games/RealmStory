@@ -1,5 +1,6 @@
 package net.krglok.realmStory.core;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 public class StoryList extends HashMap<Integer, Story> 
@@ -39,8 +40,8 @@ public class StoryList extends HashMap<Integer, Story>
 		{
 			key = ID++;
 		}
-		Story sEvent = getStory(story.storyName);
-		if (sEvent != null)
+		Story sStory = getStory(story.storyName);
+		if (sStory != null)
 		{
 			story.storyName = story.storyName+"_"+String.valueOf(key);
 		}
@@ -59,11 +60,11 @@ public class StoryList extends HashMap<Integer, Story>
 	
 	public Story getStory(String name)
 	{
-		for (Story sEvent :values())
+		for (Story story :values())
 		{
-			if (sEvent.storyName.equalsIgnoreCase(name))
+			if (story.storyName.equalsIgnoreCase(name))
 			{
-				return sEvent;
+				return story;
 			}
 		}
 		return null;
@@ -72,15 +73,31 @@ public class StoryList extends HashMap<Integer, Story>
 	public StoryList findStoryObject(String name)
 	{
 		StoryList subList = new StoryList();
-		for (Story sEvent : this.values())
+		for (Story story : this.values())
 		{
-			if (sEvent.storyName.contains(name))
+			if (story.storyName.contains(name))
 			{
-				 subList.addStory(sEvent);
+				 subList.addStory(story);
 			}
 		}
 		return subList;
 	}
 	
+	
+	public StoryList getRefList(Collection<Integer> refList)
+	{
+		StoryList subList = new StoryList();
+		
+		for (Integer ref : refList)
+		{
+			Story item = getStory(ref);
+			if (item != null)
+			{
+				subList.addStory(item);
+			}
+		}
+		
+		return subList;
+	}
 	
 }

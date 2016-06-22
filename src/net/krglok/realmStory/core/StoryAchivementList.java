@@ -1,5 +1,6 @@
 package net.krglok.realmStory.core;
 
+import java.util.Collection;
 import java.util.HashMap;
 
 /**
@@ -40,7 +41,12 @@ public class StoryAchivementList extends  HashMap<Integer, StoryAchivement>
 		return ID;
 	}
 	
-	public void addStoryObject(StoryAchivement storyAchivement)
+	/**
+	 * speichert das Achivement in der Liste, wenn den Namen noch nicht gibt
+	 * 
+	 * @param storyAchivement
+	 */
+	public int addStoryAchivement(StoryAchivement storyAchivement)
 	{
 		int key = storyAchivement.AchivementId;
 		if (key < 1)
@@ -51,16 +57,25 @@ public class StoryAchivementList extends  HashMap<Integer, StoryAchivement>
 		{
 			key = ID++;
 		}
-		StoryAchivement sEvent = getStoryAchivement(storyAchivement.AchivementName);
-		if (sEvent == null)
+		StoryAchivement item = getStoryAchivement(storyAchivement.AchivementName);
+		if (item == null)
 		{
 			storyAchivement.AchivementId  = key;
 			this.put(key, storyAchivement);
+			return key;
+		}else
+		{
+			return 0;
 		}
 	}
 	
 	
-	
+	/**
+	 * Suchtdas Achivement mit der Id
+	 * 
+	 * @param id
+	 * @return
+	 */
 	public StoryAchivement getStoryAchivement(int id)
 	{
 		if (this.containsKey(id))
@@ -70,6 +85,11 @@ public class StoryAchivementList extends  HashMap<Integer, StoryAchivement>
 		return null;
 	}
 	
+	/**
+	 * Sucht ein Achivement mit dem Namen
+	 * @param name
+	 * @return
+	 */
 	public StoryAchivement getStoryAchivement(String name)
 	{
 		for (StoryAchivement sEvent :values())
@@ -82,16 +102,39 @@ public class StoryAchivementList extends  HashMap<Integer, StoryAchivement>
 		return null;
 	}
 	
-	public StoryAchivementList findStoryObject(String name)
+	/**
+	 * Sucht alle Achivements die den String innerhalb des Namens haben
+	 *  
+	 * @param name
+	 * @return gefundenes StoryAchivementList oder nil
+	 */
+	public StoryAchivementList searchStoryAchivement(String word)
 	{
 		StoryAchivementList subList = new StoryAchivementList();
 		for (StoryAchivement sEvent : this.values())
 		{
-			if (sEvent.AchivementName .contains(name))
+			if (sEvent.AchivementName .contains(word))
 			{
-				 subList.addStoryObject(sEvent) ;
+				 subList.addStoryAchivement(sEvent) ;
 			}
 		}
+		return subList;
+	}
+
+	
+	public StoryAchivementList getRefList(Collection<Integer> refList)
+	{
+		StoryAchivementList subList = new StoryAchivementList();
+		
+		for (Integer ref : refList)
+		{
+			StoryAchivement item = getStoryAchivement(ref);
+			if (item != null)
+			{
+				subList.addStoryAchivement(item);
+			}
+		}
+		
 		return subList;
 	}
 	

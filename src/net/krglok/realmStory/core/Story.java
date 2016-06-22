@@ -39,14 +39,14 @@ public class Story
 
 
 
-	public int getStoryId()
+	public int getId()
 	{
 		return storyId;
 	}
 
 
 
-	public void setStoryId(int storyId)
+	public void setId(int storyId)
 	{
 		this.storyId = storyId;
 	}
@@ -179,7 +179,7 @@ public class Story
 
 
 
-	public Boolean getIsPublic()
+	public Boolean isPublic()
 	{
 		return isPublic;
 	}

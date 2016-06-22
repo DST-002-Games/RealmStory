@@ -58,15 +58,7 @@ public class ConfigData extends ConfigBasis
 		this.configFile = configFile;
 		isUpdateCheck = configFile.getBoolean("updatecheck", false);
 		isAutoUpdate  = configFile.getBoolean("autoupdate", false);
-		// money base price
-		ConfigBasis.GOLDNUGGET_PRICE = configFile.getDouble("GOLDNUGGET_PRICE",45.0);
 		// bank settings
-		calcinterest = configFile.getBoolean("calcinterest",true);
-		calccreditinterest = configFile.getBoolean("calccreditinterest", true);
-		allowcredit = configFile.getBoolean("allowcredit", true);
-		allowitembank = configFile.getBoolean("allowitembank", false);
-		allowxpbank = configFile.getBoolean("allowxpbank", false);
-		
 		setLoaded(true);
 	}
 
@@ -88,16 +80,6 @@ public class ConfigData extends ConfigBasis
 
 	public Boolean initConfigData()
 	{
-		
-		armorItems = ConfigBasis.initArmor();
-		weaponItems = ConfigBasis.initWeapon();
-		toolItems = ConfigBasis.initTool();
-		buildItems  = ConfigBasis.initBuildMaterial();
-		materialItems = ConfigBasis.initMaterial();
-		oreItems = ConfigBasis.initOre();
-		valuableItems = ConfigBasis.initValuables();
-		foodItems  = ConfigBasis.initFoodMaterial();
-		
 		return true;
 	}
 

@@ -2,7 +2,6 @@ package net.krglok.realmStory;
 
 import java.util.logging.Logger;
 
-import net.krglok.realmStory.ServerListener;
 import net.krglok.realmStory.common.MessageData;
 import net.krglok.realmStory.command.CommandList;
 import net.krglok.realmStory.data.ConfigData;
@@ -10,7 +9,6 @@ import net.krglok.realmStory.data.DataStore;
 import net.milkbowl.vault.economy.Economy;
 
 import org.bukkit.configuration.file.FileConfiguration;
-import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class RealmStory extends JavaPlugin 
@@ -35,22 +33,8 @@ public class RealmStory extends JavaPlugin
 	}
 
 	/**
-	 * load the economy plugin from Vault
-	 * @return
-	 */
-    private boolean setupEconomy()
-    {
-        RegisteredServiceProvider<Economy> economyProvider = getServer().getServicesManager().getRegistration(net.milkbowl.vault.economy.Economy.class);
-		if (economyProvider != null)
-		{
-            economy = economyProvider.getProvider();
-        }
-
-        return (economy != null);
-    }
-    
-    /**
      * necessary for Command.run()
+     * 
      * @return
      */
     public Economy economy()

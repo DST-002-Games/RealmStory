@@ -2,9 +2,6 @@ package net.krglok.realmStory.common;
 
 import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.logging.Logger;
-
-
 import net.krglok.realmStory.command.RealmsSubCommandType;
 import net.krglok.realmStory.data.TextConstant;
 

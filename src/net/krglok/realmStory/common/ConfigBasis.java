@@ -1,8 +1,5 @@
 package net.krglok.realmStory.common;
 
-
-import org.bukkit.Material;
-
 /**
  * 
  * @author Windu
@@ -29,7 +26,7 @@ public class ConfigBasis
 	public static final String CONFIG_VER_NAME = "config_ver";
 	public static final String PLUGIN_NAME_NAME = "plugin_name";
 	public static final String PLUGIN_NAME = "RealmStory";
-	public static final String PLUGIN_VER = "0.1.0";
+	public static final String PLUGIN_VER = "0.1.1";
 	
 	
 	public static double format2(double value)

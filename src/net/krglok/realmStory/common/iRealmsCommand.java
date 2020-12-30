@@ -4,7 +4,6 @@ import java.util.ArrayList;
 
 
 import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.java.JavaPlugin;
 import net.krglok.realmStory.RealmStory;
 import net.krglok.realmStory.command.RealmsCommandType;
 import net.krglok.realmStory.command.RealmsSubCommandType;

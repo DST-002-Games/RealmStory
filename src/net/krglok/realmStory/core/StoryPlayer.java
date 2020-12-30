@@ -1,7 +1,5 @@
 package net.krglok.realmStory.core;
 
-import java.util.HashMap;
-
 public class StoryPlayer 
 {
 	protected String uuid;

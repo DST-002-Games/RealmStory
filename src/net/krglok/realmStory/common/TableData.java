@@ -122,12 +122,6 @@ public abstract class TableData
 		return false;
 	}
 	
-	private boolean existTabel(String tableName)
-	{
-		
-		return false;
-	}
-	
 	/**
 	 * ctreate a table based on the definitions.
 	 * automatic rowid used as PRIMARY KEY

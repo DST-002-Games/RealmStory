@@ -20,9 +20,6 @@ package net.krglok.realmStory.data;
  * 
  */
 
-import java.util.HashMap;
-
-import net.krglok.realmStory.common.MessageList;
 import net.krglok.realmStory.common.SQliteConnection;
 import net.krglok.realmStory.common.TableData;
 

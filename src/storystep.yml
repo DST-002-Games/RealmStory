@@ -4,14 +4,14 @@ STORYSTEP:
     storyId: 1
     stepName: 'Start Step'
     stepText:
-      '1': 'Dies ist der StartStep der Story'
-      '2': 'Ein StoryStep beschreibt die Aufgabe und den Weg. Der Spieler muss das Ziel finden.'
-      '3': 'Zusätzlich gibt es benötigte Informationen und Hintergrundwissen.'
-      '4': 'Im allgemeinen gehören zu einer Story mehrere Steps, die jeweisl ein Stück eines Puzzles freigeben.'
-      '5': 'Am Ende erreicht man sein Ziel und erhält eine Belohnung. Im allgemeinen ist das Zugriffsrecht (Permission)'
-      '6': 'Wenn ein Step erledigt wird erhält man eine Errungenschaft (Achivement). Diese Achivements sind völlig '
-      '7': 'unabhängig von den Achivements in Minecraft und werden vom Ersteller der Story definiert.'
-      '8': 'Gehe in einen der Nebenräume und suche das Schild mit der [STEP] 2 '
+      '1': 'This is the start of the story'
+      '2': 'A StoryStep describes the task and the way. The player has to find the target.'
+      '3': 'In addition, there is required information and background knowledge.'
+      '4': 'In general, a story has several steps that each release a piece of a puzzle.'
+      '5': 'In the end you reach your goal and receive a reward. In general, the access right (permission)'
+      '6': 'When a step is completed you get an achievement (Achivement). These achivements are completely'
+      '7': 'independent of the achievements in Minecraft and are defined by the Creator of the story.'
+      '8': ' '
       '9': ''
       '10': ' '
       '11': ' '
@@ -21,7 +21,7 @@ STORYSTEP:
     requiredPerm:
       1: realmstory.user
     grantedPerm: []
-    resultAchivement: 'Step 2 des Intro'
+    resultAchivement: 'Step 2 of the intro'
     actionName: 
     actionType: INSTRUCTION
     actionStatus: 0

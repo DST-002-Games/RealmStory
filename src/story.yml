@@ -3,15 +3,15 @@ STORY:
     id: 1
     storyName: 'Story Intro'
     storyStartText:
-      '1': 'Dies ist das StoryIntro'
-      '2': 'In einer Story bekommst die Ziele genannt die du erreichen musst.'
-      '3': 'Dies ist ähnlich einer Quest aber ohne die verschiedenen besonderen Bedingungen.'
-      '4': 'Die Story besteht im wesentlichen aus Texten, die in'
-      '5': 'Büchern präsentiert werden. Man erlangt also Wissen. Zugegeben dies ist nicht nach jedermanns Geschmack.'
-      '6': 'Sehr häufig sind Quests in die Story eingebettet.'
-      '7': 'Die Story bildet dann den Rahmen der mehrere Schritte, Abschnitte oder Questen umspannt.'
-      '8': 'Die Story füllt den Raum zwischen den Questen mit Informationen und Hintergrundwissen aus.'
-      '9': 'Die Story verbindet die einzelnen Questen zu einer Handlung.'
+      '1': 'This is the story intro'
+      '2': 'In a story you get the goals that you have to achieve.'
+      '3': 'This is similar to a quest but without the various special conditions.'
+      '4': 'The story essentially consists of texts written in'
+      '5': 'Books are presented. So you get knowledge. Granted this is not to everyone's taste.'
+      '6': 'Quests are very often embedded in the story.'
+      '7': 'The story then forms the framework that spans several steps, sections or quests.'
+      '8': 'The story fills the space between the quests with information and background knowledge.'
+      '9': 'The story combines the individual quests into one plot.'
       '10': ' '
       '11': ' '
       '12': ' '
@@ -23,9 +23,9 @@ STORY:
     startStep: 1
     endStep: 1
     storyStartText:
-      '1': 'Seite 1            Du hast die Story abgeschlossen'
-      '2': 'Seite 2            Es folgen noch einige leere Seiten'
-      '3': 'Seite 3            '
-      '4': 'Seite 4            '
-      '5': 'Seite 5            '
+      '1': 'Page 1            You completed the story'
+      '2': 'Page 2            A few more blank pages follow'
+      '3': 'Page 3            '
+      '4': 'Page 4            '
+      '5': 'Page 5            '
     

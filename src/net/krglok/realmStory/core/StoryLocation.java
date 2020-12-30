@@ -3,7 +3,6 @@ package net.krglok.realmStory.core;
 import java.util.HashMap;
 
 import net.krglok.realmStory.common.LocationData;
-import net.krglok.realmStory.common.MessageList;
 
 /**
  * 

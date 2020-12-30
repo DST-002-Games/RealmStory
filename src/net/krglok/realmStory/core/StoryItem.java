@@ -1,8 +1,6 @@
 package net.krglok.realmStory.core;
 
 import java.util.ArrayList;
-import java.util.List;
-
 import net.krglok.realmStory.common.Item;
 
 /**
@@ -10,7 +8,7 @@ import net.krglok.realmStory.common.Item;
  * <pre>
  * Die StoryItem werden ueber den Namen verwaltet.
  * Der Name ist eine unique text referenz.
- * Zusätzlich kann ein Material angegeben werden.
+ * Zusï¿½tzlich kann ein Material angegeben werden.
  * Nur wenn das Material korrekt, kann das Item im Spiel erstellt werden.
  * 
  * Die StringList lore wird auf das Item geschhrieben, wenn das Item 
